@@ -1,5 +1,5 @@
 {
-  "benchmark": "mmlu",
+  "benchmark": ["mmlu", "math500"],
   "pool": [
     "qwen3-coder-30b",
     "gpt-oss-120b",
@@ -9,41 +9,41 @@
   "n_total": 14336,
   "popsize": 4,
   "m_cma": 4,
-  "generations": 12,
-  "best_fitness": 1.015625,
-  "cost": {
-    "cost_usd": 0.2372,
-    "cost_missing": false,
-    "cost_ledger": "experiments/mmlu/2026-07-23/cost_ledger.jsonl",
-    "cost_calls": 803,
-    "cost_prompt_tokens": 508581,
-    "cost_completion_tokens": 137280,
+  "generations": 24,
+  "best_fitness": 1.014675,
+    "cost": {
+      "cost_usd": 0.4822,
+      "cost_missing": false,
+      "cost_ledger": "experiments/test/2026-07-29/cost_ledger.jsonl",
+      "cost_calls": 1608,
+    "cost_prompt_tokens": 1019088,
+    "cost_completion_tokens": 273887,
     "cost_per_model": {
       "openrouter:google/gemma-3-4b-it": {
-        "prompt_tokens": 120751,
-        "completion_tokens": 10268,
-        "calls": 187,
-        "usd": 0.0071
+        "prompt_tokens": 234821,
+        "completion_tokens": 20509,
+        "calls": 372,
+        "usd": 0.0141
       },
       "openrouter:nvidia/nemotron-3-ultra-550b-a55b": {
-        "prompt_tokens": 121487,
-        "completion_tokens": 63611,
-        "calls": 200,
-        "usd": 0.2007
+        "prompt_tokens": 248327,
+        "completion_tokens": 120930,
+        "calls": 404,
+        "usd": 0.3976
       },
       "openrouter:openai/gpt-oss-120b": {
-        "prompt_tokens": 140434,
-        "completion_tokens": 17147,
-        "calls": 210,
-        "usd": 0.0081
+        "prompt_tokens": 271628,
+        "completion_tokens": 33743,
+        "calls": 418,
+        "usd": 0.0168
       },
       "openrouter:qwen/qwen3-coder-30b-a3b-instruct": {
-        "prompt_tokens": 125909,
-        "completion_tokens": 46254,
-        "calls": 206,
-        "usd": 0.0213
+        "prompt_tokens": 264312,
+        "completion_tokens": 58705,
+        "calls": 414,
+        "usd": 0.0537
       }
     }
   },
-  "run_dir": "experiments/mmlu/2026-07-23"
+  "run_dir": "experiments/test/2026-07-29"
 }
